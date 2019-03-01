@@ -12,4 +12,12 @@ server.use(express.json());
 
 configureRoutes(server);
 
+
+server.get('/', async (req, res) => {
+    res.send(`
+      <h1>SANITY CHECK!</h1>
+    `);
+});
+
+
 module.exports = server;
