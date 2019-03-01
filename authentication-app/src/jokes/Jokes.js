@@ -22,7 +22,7 @@ class Jokes extends React.Component {
                 <h2>List of Jokes</h2>
                 <div>
                     {this.state.jokes.map(joke => (
-                        <div key= {joke.id}>
+                        <div key= {joke.id} className='joke'>
                             {joke.joke}
                         </div>
                     ))}

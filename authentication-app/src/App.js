@@ -32,18 +32,18 @@ class App extends Component {
   render() {
     return (
       <>
-        <header>
+        <header className='App'>
           <nav>
-            <NavLink to="/register">Sign Up</NavLink>
-            &nbsp; | &nbsp;
-            <NavLink to="/login">Sign In</NavLink>
-            &nbsp; | &nbsp;
-            <NavLink to="/jokes">Jokes</NavLink>
-            &nbsp; | &nbsp;
-            <button onClick={this.logout}>Sign Out</button>
+            <NavLink to="/register" className='nav-link'>Sign Up</NavLink>
+            &nbsp;  &nbsp;
+            <NavLink to="/login" className='nav-link'>Sign In</NavLink>
+            &nbsp;  &nbsp;
+            <NavLink to="/jokes" className='nav-link'>Jokes</NavLink>
+            &nbsp;  &nbsp;
+            <button className='nav-btn' onClick={this.logout}>Sign Out</button>
           </nav>
         </header>
-        <section>
+        <section className='App'>
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/jokes" component={Jokes} />
