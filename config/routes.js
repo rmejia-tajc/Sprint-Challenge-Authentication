@@ -29,7 +29,6 @@ function register(req, res) {
     });
 }
 
-
 function login(req, res) {
   // implement user login
   const { username , password } = req.body;
